@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta>
+    <title>Ski instructor Kopaonik</title>
+    <link rel="icon" type="image/gif/png" href="Logo.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="code.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8679</button>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#"><img src="Logo.png"></a></li>
+            <li><a href="#news">Home</a></li>
+            <li><a href="#coding">About BB</a></li>
+            <li><a href="#cutting">Classes</a></li>
+            <li><a href="#etching">Services</a></li>
+            <li><a href="#edging">Price list</a></li>
+            <li><a href="#repair-sewing-machine">Comments</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="redVoznje.html">Blog</a></li>
+            <li class="dropdownIcon"><a href="javascript:avoid(0);" onclick="dropdownMeny()">&#9776;</a></li>
+        </ul>
+    </nav>
+    <div class="frame">
+        <section class="baner">
+            <video autoplay muted loop id="myVideo">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section id="About" class="section-1">
+            <h2>ABOUT SKI INSTRUCTOR</h2>
+        </section>
+        <section>
+            <div class="row">
+                <div class="child-1">
+                    <p>Boško is not just a ski instructor, he is a very athletic person, a passionate sports lover, and an overall winter
+                    lover.</p>
+                    <ul>
+                        <li><b>Over 6 years</b> of experience working as a ski instructor with over 600 satisfied participants.
+                        </li>
+                        <li>Over 2400 hours of skiing with a large number of children and adults.
+                        </li>
+                        <li>He graduated as a Professor of Sports and Physical Education.
+                        </li>
+                        <li>With professional knowledge and experience working with various participants, he will make your first skiing steps easy
+                        and fun!
+                        </li>
+                        <li>10 years of experience training and competing in MMA.
+                        </li>
+                        <li>Experience working as a fitness trainer for adults, as well as in working in various sports schools and clubs for youth
+                        and children.
+                        </li>
+                    </ul>
+                </div>
+                <div class="child-1">
+                    <img id="image-about" src="ski.instructor.bosko.jpeg">
+                    <figcaption>SKI INSTRUCTOR BOSKO</figcaption>
+                </div>
+            </div>
+        </section>
+        <section id="Classes" class="section-1">
+            <h2>CLASSES</h2>
+        </section>
+        <section id="Services" class="section-1">
+            <h2>OUR SERVICES</h2>
+            <div class="row">
+                <div class="child-1">
+                    <h3>Individual and group skiing lessons:</h3>
+                    <ul>
+                        <li>Training <b>1 on 1</b> with the instructor, in pairs, in groups of three...
+                        </li>
+                        <li>Up to a maximum of <b>5 members</b> in the group.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="Qualification" class="section-1">
+            <div></div>
+            <h2>WHY WORK WITH ME</h2>
+        </section>
+        <section id="Prices" class="section-1">
+            <div></div>
+            <h2>PRICE LIST</h2>
+        </section>
+    </div>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = { lat: 43.580, lng: 21.326 };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 16, center: uluru });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({ position: uluru, map: map });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCA0AoqEwFfq8--W1hAVLPvL-v8MCT-Ic&callback=initMap"
+        type="text/javascript"></script>
+    <section class="section-1">
+        <div class="row">
+            <div class="child-2">
+                <img src="google-maps-marker1.png">
+                <p><a href="https://www.google.rs/maps/place/Obilic%CC%81eva+3,+Kru%C5%A1evac/@43.58019,21.3250587,17z/data=!3m1!4b1!4m5!3m4!1s0x475687ef95d86721:0x70e0ed9580795ce6!8m2!3d43.58019!4d21.3272474"
+                        target="_blank">Obilićeva 3, 37000 Kruševac</a></p>
+            </div>
+            <div class="child-2">
+                <img src="gmail-email.png">
+                <p><a href="mailto:mehanika037info@gmail.com?subject=Pitanje u vezi&body=Poštovani,"
+                        target="_blank">mehanika037info@gmail.com</a></p>
+            </div>
+            <div class="child-2">
+                <img src="phone-logo.png">
+                <!-- <p><a href="tel:0628778172">0628778172</a></p> -->
+                <p><a href="tel:+381652076335">0652076335</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section id="contact" class="section-1">
+            <h2>CONTACT US</h2>
+            <div id="map"></div>
+        </section>
+    </footer>
+    <script>
+        function dropdownMeny() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
