@@ -47,6 +47,18 @@ article p {
     justify-content: space-between;
     padding: 15px;
 }
+.row1 {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+.row1 .child-2 p {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #9b0808;
+    padding: 15px;
+}
 
 .frame {
     width: 100%;
@@ -70,19 +82,12 @@ article p {
     padding: 10px;
     border-radius: 5px;
 }
-.child-2 {
-    width: 33.3%;
-    text-align: center;
-    background-color: #eee;
-}
+
 .child-2 img {
     height: auto;
     width: 40px;
 }
-.child-2 p a {
-    font-size: 15px;
-    color: black;
-}
+
 .child-3 {
     width: 100%;
     text-align: center;
@@ -111,6 +116,11 @@ div.child-1 p {
 /* section {
     padding: 0 5% 0 5%;
 } */
+section#Comments {
+    display: block;
+    height: 100%;
+    background-image: url(skijasica.jpeg);
+}
 section.section-1 {
     padding: 0 5% 0 5%;
 }
@@ -352,8 +362,10 @@ table, th, td {
     .row {
         padding: 10px;
     }
-    div.child-2 p {
+    div.row1 child-2 p {
         padding: 0px;
+        width: 100%;
 
+        
     }
-}
+    }
