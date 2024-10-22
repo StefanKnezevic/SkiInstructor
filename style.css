@@ -2,19 +2,23 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     background-color: #eee;
 }
-nav, 
-header, 
-footer {
-    display: block;
-    padding: 0 5% 0 5%;
 
+nav {
+    overflow: hidden;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
 }
 
-.section-1{
+.section-1 {
     padding: 30px;
 }
 
@@ -47,11 +51,13 @@ article p {
     justify-content: space-between;
     padding: 15px;
 }
+
 .row1 {
     width: 100%;
     display: flex;
     padding: 20px;
 }
+
 .row1 .child-2 p {
     display: flex;
     justify-content: space-around;
@@ -70,10 +76,12 @@ article p {
     text-align: center;
     width: 20%;
 }
+
 .child-1 {
     text-align: justify;
     width: 50%;
 }
+
 .child-1 button {
     font-size: 20px;
     background-color: blue;
@@ -110,9 +118,11 @@ div input {
     padding: 5px;
     font-size: 15px;
 }
+
 div.child-1 p {
     padding: 0 30px 0 30px;
 }
+
 /* section {
     padding: 0 5% 0 5%;
 } */
@@ -121,30 +131,36 @@ section#Comments {
     height: 100%;
     background-image: url(skijasica.jpeg);
 }
+
 section.section-1 {
     padding: 0 5% 0 5%;
 }
+
 section#contact.section-1 {
     padding: 0 0% 0 0%;
 }
+
 section.baner #myVideo {
     display: block;
     width: 100%;
 }
-.section-1 > * {
+
+.section-1>* {
     text-align: center;
     margin: 0;
     color: black;
 }
+
 .section-1 ul {
     text-align: left;
     font-size: 20px;
     /* color: #244afb; */
 }
+
 .section-1 h2 {
     font-size: 40px;
     padding-top: 30px;
-    
+
 }
 
 .child-1 #image-about {
@@ -157,48 +173,86 @@ figcaption {
     padding-top: 6px;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
 
 #myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  font-size: 40px;
-  border: none;
-  outline: none;
-  color: blue;
-  cursor: pointer;
-  padding: 8px;
-  border-radius: 50%;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    color: blue;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
 }
 
 #myBtn:hover {
     font-size: 35px;
-    color:red;
+    color: red;
 }
+
 button {
     background-color: transparent;
 }
+
 #map {
-        width: 100%;
-        height: 400px;
-        background-color: grey;
+    width: 100%;
+    height: 400px;
+    background-color: grey;
 }
+
 /*########### Nav bar ##########*/
-nav { 
+nav {
     width: 100%;
     margin: 0;
 }
@@ -214,12 +268,14 @@ ul.topnav li {
     list-style: none;
     float: left;
 }
+
 a {
     text-decoration: none;
     text-align: center;
 
 }
-ul.topnav li a { 
+
+ul.topnav li a {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -229,12 +285,14 @@ ul.topnav li a {
     padding-right: 7px;
     color: #666;
     font-size: 18px;
+    font-weight: bold;
 }
 
 ul.topnav li a img {
     width: auto;
     height: 45px;
 }
+
 ul.topnav li a:hover {
     background-color: #0080ff;
     color: white;
@@ -246,7 +304,8 @@ ul.topnav li.dropdownIcon {
 
 /*####### Custom styles ########*/
 
-.baner h1, .baner h2 {
+.baner h1,
+.baner h2 {
     font-size: 39px;
     -webkit-text-stroke: 2.5px #244afb;
     color: transparent;
@@ -265,8 +324,10 @@ ul.topnav li.dropdownIcon {
     font-size: 30px;
 }
 
-table, th, td {
-  border: 1px solid;
+table,
+th,
+td {
+    border: 1px solid;
 }
 
 /*######### MOBILE #######*/
@@ -275,97 +336,117 @@ table, th, td {
     ul.topnav li:not(:nth-child(1)) {
         display: none;
     }
+
     .child {
-    text-align: center;
-    width: 50%;
+        text-align: center;
+        width: 50%;
     }
+
     ul.topnav li.dropdownIcon {
         display: block;
         float: right;
     }
+
     ul.topnav.responsive li.dropdownIcon {
         position: absolute;
         top: 0;
         right: 0;
     }
+
     ul.topnav.responsive {
         position: relative;
     }
+
     ul.topnav.responsive li {
         display: inline;
         float: none;
     }
+
     ul.topnav.responsive li a {
         display: flex;
         text-align: left;
     }
-    
-    .col-6, .col-4, .col-5, .col-7  {
+
+    .col-6,
+    .col-4,
+    .col-5,
+    .col-7 {
         width: 100%;
         margin: 0;
     }
-    
+
     div.mobileStack {
         width: 50%;
         display: block;
     }
-    
-    div.leftSide_col, div.rightSide_col {
+
+    div.leftSide_col,
+    div.rightSide_col {
         margin: 15px;
     }
+
     .child-1 {
         width: 100%;
     }
-    
+
     .child-2 {
         width: 100%;
     }
+
     .child-2 p {
-        padding: 0px;    
+        padding: 0px;
     }
-    
-    textarea, div input {
+
+    textarea,
+    div input {
         width: 85%;
     }
-    
+
     .videoContainer iframe {
         position: relative;
         width: 100%;
         margin: 0;
         overflow: hidden;
     }
+
     div.box {
         display: block;
         padding: 5px;
     }
-    
-    div.slopeIcon{
-        margin: 10px;    
+
+    div.slopeIcon {
+        margin: 10px;
     }
-    
+
     div.slopeIcon img {
         width: 100%;
     }
+
     section {
         padding: 0px;
     }
+
     section.section-1 {
         padding: 0px;
     }
+
     .section-1 p {
         text-align: center;
         padding: 20px;
     }
+
     div.child-1 p {
         padding: 20px;
     }
+
     .row {
         padding: 10px;
     }
+
     div.row1 child-2 p {
         padding: 0px;
         width: 100%;
 
-        
+
     }
-    }
+}
