@@ -68,8 +68,18 @@ article p {
 
 .frame {
     width: 100%;
-    background-color: #244afb;
-    background-image: url(background-image.webp);
+    height: 100%;
+    background-color: #e8e4c9;
+    background-image: url(backgruond.jpg);
+}
+
+.title {
+    /* width: 80%; */
+    height: 100%;
+    margin: 0 5%;
+    color: black;
+    text-align: left;
+    font-size: 29px;
 }
 
 .child {
@@ -132,41 +142,53 @@ section#Comments {
     background-image: url(skijasica.jpeg);
 }
 
-section.section-1 {
-    padding: 0 5% 0 5%;
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 100%;
+    width: 90%;
 }
 
-section#contact.section-1 {
-    padding: 0 0% 0 0%;
+.about>div {
+    height: 100%;
+    width: 100%;
+    border: 2px #030303 solid;
+    text-decoration: none;
+    text-align: left;
+    /* margin: auto; */
+    padding: 5% 3%;
 }
+
+*/ .about-child {
+    height: 100%;
+    width: 100%;
+    border: 1px #030303 solid;
+    text-decoration: none;
+    text-align: left;
+    padding: 5% 3%;
+}
+
+/* .about-child li {
+    text-decoration: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    float: left;
+} */
 
 section.baner #myVideo {
     display: block;
     width: 100%;
 }
 
-.section-1>* {
-    text-align: center;
-    margin: 0;
-    color: black;
-}
-
-.section-1 ul {
-    text-align: left;
-    font-size: 20px;
-    /* color: #244afb; */
-}
-
-.section-1 h2 {
-    font-size: 40px;
-    padding-top: 30px;
-
-}
-
-.child-1 #image-about {
-    border: 2px #030303 solid;
-    border-radius: 30px;
+#image-about {
+    border: 1px #030303 solid;
+    border-radius: 10px;
     width: 100%;
+    height: 100%;
 }
 
 figcaption {
@@ -304,7 +326,7 @@ ul.topnav li.dropdownIcon {
 
 /*####### Custom styles ########*/
 
-.baner h1,
+/* .baner h1,
 .baner h2 {
     font-size: 39px;
     -webkit-text-stroke: 2.5px #244afb;
@@ -322,7 +344,7 @@ ul.topnav li.dropdownIcon {
 
 .baner h2 {
     font-size: 30px;
-}
+} */
 
 table,
 th,
@@ -424,15 +446,6 @@ td {
 
     section {
         padding: 0px;
-    }
-
-    section.section-1 {
-        padding: 0px;
-    }
-
-    .section-1 p {
-        text-align: center;
-        padding: 20px;
     }
 
     div.child-1 p {
