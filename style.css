@@ -181,6 +181,7 @@ section#Comments {
 
 section.baner #myVideo {
     display: block;
+    padding-top: 44px;
     width: 100%;
 }
 
@@ -189,6 +190,22 @@ section.baner #myVideo {
     border-radius: 10px;
     width: 100%;
     height: 100%;
+}
+.titleBlog h1 {
+    height: 100%;
+    margin: 0 5%;
+    color: black;
+    text-align: left;
+    font-family: YACgEQNAr7w-0;
+    font-size: x-large;
+}
+.titleBlog h3 {
+    height: 100%;
+    margin: 0 15%;
+    color: black;
+    text-align: left;
+    font-family: YACgEQNAr7w-0;
+    font-size: medium;
 }
 
 figcaption {
@@ -290,6 +307,19 @@ ul.topnav li {
     list-style: none;
     float: left;
 }
+ul.Blog {
+    display: flex;
+    flex-direction: column;
+}
+ul.Blog li {
+    height: 100%;
+    margin: 0 15%;
+    color: black;
+    text-align: left;
+    font-family: YACgEQNAr7w-0;
+    font-size: medium;
+    padding-bottom: 12px;
+}
 
 a {
     text-decoration: none;
@@ -309,7 +339,9 @@ ul.topnav li a {
     font-size: 18px;
     font-weight: bold;
 }
-
+hr {
+    size: 2px;
+}
 ul.topnav li a img {
     width: auto;
     height: 45px;
@@ -358,6 +390,12 @@ td {
     ul.topnav li:not(:nth-child(1)) {
         display: none;
     }
+    .frame {
+            width: 100%;
+            height: 100%;
+            background-color: #e8e4c9;
+            background-image: url(backgruond.jpg);
+        }
 
     .child {
         text-align: center;
@@ -459,7 +497,5 @@ td {
     div.row1 child-2 p {
         padding: 0px;
         width: 100%;
-
-
     }
 }
