@@ -15,64 +15,63 @@
     <nav>
         <ul class="topnav" id="dropdownClick">
             <li><a href="#"><img src="Logo1.svg"></a></li>
-            <li><a href="#instructor">About BB</a></li>
-            <li><a href="#skiing">Classes</a></li>
-            <li><a href="#instruktor">Services</a></li>
-            <li><a href="#skijanje">Price list</a></li>
-            <li><a href="#kopaonik">Comments</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#About">About BB</a></li>
+            <li><a href="#Classes">Classes</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Price">Price list</a></li>
+            <li><a href="#Comments">Comments</a></li>
+            <li><a href="#Contact">Contact</a></li>
             <li class="dropdownIcon"><a href="javascript:avoid(0);" onclick="dropdownMeny()">&#9776;</a></li>
         </ul>
     </nav>
 </header>
 
 <body>
+    <section class="baner">
+        <video autoplay muted loop id="myVideo">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </section>
     <div class="frame">
-        <section class="baner">
-            <video autoplay muted loop id="myVideo">
-                <source src="video.mp4" type="video/mp4">
-            </video>
-        </section>
-        <section>
-            <div class="about">
-                <div class="about-child">
-                    <section id="About" class="title">
-                        <h2>ABOUT SKI INSTRUCTOR</h2>
-                    </section>
-                    <div>
-                        <p>Boško is not just a ski instructor, he is a very athletic person, a passionate sports lover,
-                            and
-                            an overall winter
-                            lover.</p>
-                        <ul>
-                            <li><b>Over 6 years</b> of experience working as a ski instructor with over 600 satisfied
-                                participants.
-                            </li>
-                            <li><b>Over 2400 hours</b> of skiing with a large number of children and adults.
-                            </li>
-                            <li>He graduated as a Professor of Sports and Physical Education.
-                            </li>
-                            <li>With professional knowledge and experience working with various participants, he will
-                                make
-                                your first skiing steps easy
-                                and fun!
-                            </li>
-                            <li><b>10 years</b> of experience training and competing in MMA.
-                            </li>
-                            <li>Experience working as a fitness trainer for adults, as well as in working in various
-                                sports
-                                schools and clubs for youth
-                                and children.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <img id="image-about" src="ski.instructor.bosko.jpeg">
-                    <figcaption>SKI INSTRUCTOR BOSKO</figcaption>
+        <div class="about">
+            <div>
+                <div id="About" class="title">
+                    <h2>ABOUT SKI INSTRUCTOR</h2>
+                    <p>Boško is not just a ski instructor, he is a very athletic person, a passionate sports lover,
+                        and
+                        an overall winter
+                        lover.</p>
+                    <ul>
+                        <li><b>Over 6 years</b> of experience working as a ski instructor with over 600 satisfied
+                            participants.
+                        </li>
+                        <li><b>Over 2400 hours</b> of skiing with a large number of children and adults.
+                        </li>
+                        <li>He graduated as a Professor of Sports and Physical Education.
+                        </li>
+                        <li>With professional knowledge and experience working with various participants, he will
+                            make
+                            your first skiing steps easy
+                            and fun!
+                        </li>
+                        <li><b>10 years</b> of experience training and competing in MMA.
+                        </li>
+                        <li>Experience working as a fitness trainer for adults, as well as in working in various
+                            sports
+                            schools and clubs for youth
+                            and children.
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+            <div>
+                <p class="line"></p>
+                <img id="image-about" src="ski.instructor.bosko.jpeg">
+                <!-- <figcaption>SKI INSTRUCTOR BOSKO</figcaption> -->
+                <p class="line"></p>
+
+            </div>
+        </div>
         <section id="Classes" class="title">
             <h2>CLASSES</h2>
             <div class="row">
@@ -115,36 +114,95 @@
             </div>
         </section>
         <section id="Qualification" class="title">
-            <div></div>
             <h2>WHY WORK WITH ME</h2>
-            <p><b>Constant motivation</b> of participants and skiing in a pleasant, positive atmosphere.
-                The safety of the students comes first!</p>
-            <p>Maximum commitment of the instructor to meet the needs of the participants
-                through <b>practical</b> and <b>theoretical</b>knowledge.</p>
-            <p>Training in <b>Serbian</b>, <b>Russian</b> or <b>English</b>language.</p>
+            <table style="overflow-x:auto;" class="explain">
+                <tr>
+                    <td>
+                        <img src="view.svg" id="explain-icon">
+                    </td>
+                    <td>
+                        <b>Constant motivation</b> of participants and skiing in a pleasant, positive atmosphere.
+                        The safety
+                        of the students comes first!
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="jump.svg" id="explain-icon">
+                    </td>
+                    <td>Maximum commitment of the instructor to meet the needs of the participants
+                        through <b>practical</b> and <b>theoretical</b>knowledge.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="freedom.svg" id="explain-icon">
+                    </td>
+                    <td>Training in <b>Serbian</b>, <b>Russian</b> or <b>English</b>language.</td>
+                </tr>
+            </table>
         </section>
         <section id="Prices" class="title">
-            <div></div>
             <h2>PRICE LIST</h2>
+            <p>Prices shown are for 1 hour</p>
+            <div class="price">
+                <table style="overflow-x:auto;" class="price-table">
+                    <tr>
+                        <td>1 PERSON</td>
+                        <td>2 PEOPLE</td>
+                        <td>3 PEOPLE</td>
+                        <td>4 PEOPLE</td>
+                        <td>5 PEOPLE</td>
+                    </tr>
+                    <tr>
+                        <td>40 EUR</td>
+                        <td>50 EUR</td>
+                        <td>60 EUR</td>
+                        <td>70 EUR</td>
+                        <td>80 EUR</td>
+                    </tr>
+                </table>
+                <table style="overflow-x:auto;" class="tips-table">
+                    <tr>
+                        <td>
+                            <img src="skiing.svg" id="Icon">
+                        </td>
+                        <td><b>Over 2400 hours of skiing with a large number of children and adults.</b></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="flag.svg" id="Icon">
+                        </td>
+                        <td><b>Over 6 years of experience as a ski instructor.</b></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="glasses.svg" id="Icon">
+                        </td>
+                        <td><b>Over 600 satisfied participants.</b></td>
+                    </tr>
+                </table>
+            </div>
         </section>
-        <section id="Comments" class="title">
-            <h2>COMMENTS</h2>
-            <div class="row1">
-                <div class="child-2">
+        <section class="comments">
+            <h2 id="commentTitle">COMMENTS</h2>
+            <div class="comments-content">
+                <div class="comment-child">
                     <p>All recommendations for Boško, he has been working with our children for years, he is extremely
                         dedicated to his work,
                         and is a true professional. Considering that I have three children, I have had various
                         experiences with ski instructors
                         (mostly good ones), but Boško is really special and I highly recommend him to everyone who
                         starts skiing or wants to
-                        improve their skiing technique. Bojan</p>
+                        improve their skiing technique.</p>
+                    <p class="sign">Bojan</p>
                 </div>
-                <div class="child-2">
+                <div class="comment-child">
                     <p>The best ski instructor to teach your children skiing. Bosko has a great approach to children of
                         all ages, professional
-                        behavior and love for the sport that is contagious. My sincere reccomandation! Jelena</p>
+                        behavior and love for the sport that is contagious. My sincere reccomandation!</p>
+                    <p class="sign">Jelena</p>
                 </div>
-                <div class="child-2">
+                <div class="comment-child">
                     <p>Very pleasant and friendly, and I don't need to comment on professionalism and transfer of
                         knowledge and skills, he is
                         No. 1. Very fun for children, our boy skied with him in the third year and this is already the
@@ -153,44 +211,19 @@
                         soon 🤗. Always in a good
                         mood and smiling and ready to impart skiing skills to adults as well. If you need a real
                         professional for all ages, I
-                        sincerely recommend Boško, you will never go wrong with him. Sunčica</p>
+                        sincerely recommend Boško, you will never go wrong with him.</p>
+                    <p class="sign">Sunčica</p>
                 </div>
+            </div>
         </section>
     </div>
-    <script>
-        // Initialize and add the map
-        function initMap() {
-            // The location of Uluru
-            var uluru = { lat: 43.580, lng: 21.326 };
-            // The map, centered at Uluru
-            var map = new google.maps.Map(
-                document.getElementById('map'), { zoom: 16, center: uluru });
-            // The marker, positioned at Uluru
-            var marker = new google.maps.Marker({ position: uluru, map: map });
-        }
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCA0AoqEwFfq8--W1hAVLPvL-v8MCT-Ic&callback=initMap"
-        type="text/javascript"></script>
-    <!-- <section class="section-1">
-        <div class="row">
-            <div class="child-2">
-                <img src="google-maps-marker1.png">
-                <p><a href="https://www.google.rs/maps/place/Obilic%CC%81eva+3,+Kru%C5%A1evac/@43.58019,21.3250587,17z/data=!3m1!4b1!4m5!3m4!1s0x475687ef95d86721:0x70e0ed9580795ce6!8m2!3d43.58019!4d21.3272474"
-                        target="_blank">Obilićeva 3, 37000 Kruševac</a></p>
-            </div>
-            <div class="child-2">
-                <img src="gmail-email.png">
-                <p><a href="mailto:mehanika037info@gmail.com?subject=Pitanje u vezi&body=Poštovani,"
-                        target="_blank">mehanika037info@gmail.com</a></p>
-            </div>
-            <div class="child-2">
-                <img src="phone-logo.png"> -->
-    <!-- <p><a href="tel:0628778172">0628778172</a></p> -->
-    <!-- <p><a href="tel:+381652076335">0652076335</a></p>
+    <section>
+        <div class="contact">
+            <div class="contact-data">
+                <!-- <h2>CONTACT US</h2> -->
             </div>
         </div>
-    </section> -->
+    </section>
     <script>
         function dropdownMeny() {
             var x = document.getElementById("dropdownClick");
@@ -202,10 +235,5 @@
         }
     </script>
 </body>
-<footer>
-    <section id="contact" class="title">
-        <h2>CONTACT US</h2>
-    </section>
-</footer>
 
 </html>
