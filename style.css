@@ -169,6 +169,7 @@ div.child-1 p {
 
 section.baner #myVideo {
     display: block;
+    padding-top: 44px;
     width: 100%;
     margin-top: 24px;
 }
@@ -178,6 +179,24 @@ section.baner #myVideo {
     border-radius: 10px;
     width: 100%;
     height: 80%;
+}
+
+.titleBlog h1 {
+    height: 100%;
+    margin: 0 5%;
+    color: black;
+    text-align: left;
+    font-family: YACgEQNAr7w-0;
+    font-size: x-large;
+}
+
+.titleBlog h3 {
+    height: 100%;
+    margin: 0 15%;
+    color: black;
+    text-align: left;
+    font-family: YACgEQNAr7w-0;
+    font-size: medium;
 }
 
 figcaption {
@@ -280,6 +299,21 @@ ul.topnav li {
     float: left;
 }
 
+ul.Blog {
+    display: flex;
+    flex-direction: column;
+}
+
+ul.Blog li {
+    height: 100%;
+    margin: 0 15%;
+    color: black;
+    text-align: left;
+    font-family: YACgEQNAr7w-0;
+    font-size: medium;
+    padding-bottom: 12px;
+}
+
 a {
     text-decoration: none;
     text-align: center;
@@ -299,6 +333,10 @@ ul.topnav li a {
     font-weight: bold;
 }
 
+hr {
+    size: 2px;
+}
+
 ul.topnav li a img {
     width: auto;
     height: 45px;
@@ -313,12 +351,46 @@ ul.topnav li.dropdownIcon {
     display: none;
 }
 
+
+/*######### Blog show more #######*/
+.text {
+    font-size: 24px;
+}
+
+.moreText {
+    display: none;
+}
+
+.read-more-btn {
+    padding: 15px 60px;
+    background-color: rgb(149, 170, 197);
+    color: rgb(53, 49, 49);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.text.show-more .moreText {
+    display: inline;
+}
+
+.text.show-more .dots {
+    display: none;
+}
+
 /*######### MOBILE #######*/
 
 /* @media screen and (max-width: 680px) {
     ul.topnav li:not(:nth-child(1)) {
         display: none;
     }
+    .frame {
+            width: 100%;
+            height: 100%;
+            background-color: #e8e4c9;
+            background-image: url(backgruond.jpg);
+        }
 
     .child {
         text-align: center;
