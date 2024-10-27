@@ -33,14 +33,16 @@
         </video>
     </section>
     <div class="frame">
-        <div class="about">
-            <div>
-                <div id="About" class="title">
-                    <h2>ABOUT SKI INSTRUCTOR</h2>
-                    <p>Boško is not just a ski instructor, he is a very athletic person, a passionate sports lover,
+        <div class="about-container" id="About">
+            <div class="about-sections">
+                <div class="left-column">
+                    <h2 class="about-title">ABOUT SKI INSTRUCTOR</h2>
+                    <p class="about-section-text">Boško is not just a ski instructor, he is a very athletic person, a
+                        passionate sports lover,
                         and
                         an overall winter
                         lover.</p>
+                    <!-- <p class="section-text">Ovo je drugi tekst u levoj koloni.</p> -->
                     <ul>
                         <li><b>Over 6 years</b> of experience working as a ski instructor with over 600 satisfied
                             participants.
@@ -62,22 +64,27 @@
                             and children.
                         </li>
                     </ul>
+                    <div class="contact-button">
+                        <a href="mailto:your-email@example.com">CONTACT ME</a>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="line"></div>
+                    <img src="ski.instructor.bosko.jpeg" alt="Opis slike" class="image">
+                    <div class="line"></div>
                 </div>
             </div>
-            <div>
-                <p class="line"></p>
-                <img id="image-about" src="ski.instructor.bosko.jpeg">
-                <!-- <figcaption>SKI INSTRUCTOR BOSKO</figcaption> -->
-                <p class="line"></p>
-
-            </div>
         </div>
-        <section id="Classes" class="title">
-            <h2>CLASSES</h2>
-            <div class="row">
-                <div class="child-1">
-                    <h3>Classes for children</h3>
-                    <p>The recommended age for starting with lessons is 3+ years old. Kids primarily learn by imitating
+        <section id="Classes" class="classes-container">
+            <h2 class="main-title">CLASSES</h2>
+            <div class="class-sections">
+                <div class="class-section">
+                    <div class="class-header">
+                        <img src="classLogo1.svg" alt="Logo 1" class="logo">
+                        <h2 class="section-title">Classes for children</h2>
+                    </div>
+                    <p class="section-text">The recommended age for starting with lessons is 3+ years old. Kids
+                        primarily learn by imitating
                         the instructor.
                         Children start with exercises on a flat base, and then move onto gentle slopes. Since they are
                         younger they typically
@@ -87,9 +94,13 @@
                         addition to ski knowledge,
                         children also master the rules of behavior on the ski slopes and the use of cable cars.</p>
                 </div>
-                <div class="child-1">
-                    <h3>Classes for adults</h3>
-                    <p>The verbal method of training is much more prevalent in training sessions for adults. Adult
+                <div class="class-section">
+                    <div class="class-header">
+                        <img src="classLogo2.svg" alt="Logo 2" class="logo">
+                        <h2 class="section-title">Classes for adults</h2>
+                    </div>
+                    <p class="section-text">The verbal method of training is much more prevalent in training sessions
+                        for adults. Adult
                         beginners often experience
                         fear and require assurance and support from the instructor. The instructor must provide them
                         with safety with assistance
@@ -99,129 +110,158 @@
                 </div>
             </div>
         </section>
-        <section id="Services" class="title">
-            <h2>OUR SERVICES</h2>
-            <div class="row">
-                <div class="child-1">
-                    <h3>Individual and group skiing lessons:</h3>
-                    <ul>
-                        <li>Training <b>1 on 1</b> with the instructor, in pairs, in groups of three...
-                        </li>
-                        <li>Up to a maximum of <b>5 members</b> in the group.
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <section id="Services" class="services-container">
+            <h2 class="main-title">OUR SERVICES</h2>
+            <h3 class="services-title">Individual and group skiing lessons:</h3>
+            <ul class="services-list">
+                <li>Training <b style="color:red;">1 on 1</b> with the instructor, in pairs, in groups of three...
+                </li>
+                <li>Up to a maximum of <b style="color:red;">5 members</b> in the group.
+                </li>
+            </ul>
         </section>
-        <section id="Qualification" class="title">
-            <h2>WHY WORK WITH ME</h2>
-            <table style="overflow-x:auto;" class="explain">
-                <tr>
-                    <td>
-                        <img src="view.svg" id="explain-icon">
-                    </td>
-                    <td>
-                        <b>Constant motivation</b> of participants and skiing in a pleasant, positive atmosphere.
+        <h2 class="main-title">WHY WORK WITH ME</h2>
+        <div class="list-container">
+            <div class="list-item">
+                <img src="view.svg" class="list-image">
+                <div class="list-text">
+                    <p><b>Constant motivation</b> of participants and skiing in a pleasant, positive atmosphere.
                         The safety
-                        of the students comes first!
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="jump.svg" id="explain-icon">
-                    </td>
-                    <td>Maximum commitment of the instructor to meet the needs of the participants
-                        through <b>practical</b> and <b>theoretical</b>knowledge.</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="freedom.svg" id="explain-icon">
-                    </td>
-                    <td>Training in <b>Serbian</b>, <b>Russian</b> or <b>English</b>language.</td>
-                </tr>
-            </table>
-        </section>
-        <section id="Prices" class="title">
-            <h2>PRICE LIST</h2>
-            <p>Prices shown are for 1 hour</p>
-            <div class="price">
-                <table style="overflow-x:auto;" class="price-table">
-                    <tr>
-                        <td>1 PERSON</td>
-                        <td>2 PEOPLE</td>
-                        <td>3 PEOPLE</td>
-                        <td>4 PEOPLE</td>
-                        <td>5 PEOPLE</td>
-                    </tr>
-                    <tr>
-                        <td>40 EUR</td>
-                        <td>50 EUR</td>
-                        <td>60 EUR</td>
-                        <td>70 EUR</td>
-                        <td>80 EUR</td>
-                    </tr>
-                </table>
-                <table style="overflow-x:auto;" class="tips-table">
-                    <tr>
-                        <td>
-                            <img src="skiing.svg" id="Icon">
-                        </td>
-                        <td><b>Over 2400 hours of skiing with a large number of children and adults.</b></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="flag.svg" id="Icon">
-                        </td>
-                        <td><b>Over 6 years of experience as a ski instructor.</b></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="glasses.svg" id="Icon">
-                        </td>
-                        <td><b>Over 600 satisfied participants.</b></td>
-                    </tr>
-                </table>
+                        of the students comes first!</p>
+                </div>
+            </div>
+            <div class="list-item">
+                <img src="jump.svg" class="list-image">
+                <div class="list-text">
+                    <p>Maximum commitment of the instructor to meet the needs of the participants
+                        through <b>practical</b> and <b>theoretical</b> knowledge.</p>
+                </div>
+            </div>
+            <div class="list-item">
+                <img src="freedom.svg" class="list-image">
+                <div class="list-text">
+                    <p>Training in <b>Serbian</b>, <b>Russian</b> or <b>English</b> language.</p>
+                </div>
+            </div>
+        </div>
+        <section id="Price">
+            <h2 class="main-title">PRICE LIST</h2>
+            <div class="price-container">
+                <div class="left-column">
+                    <p>Prices shown are for 1 hour</p>
+                    <table>
+                        <tr>
+                            <td>1 PERSON</td>
+                            <td>2 PEOPLE</td>
+                            <td>3 PEOPLE</td>
+                            <td>4 PEOPLE</td>
+                            <td>5 PEOPLE</td>
+                        </tr>
+                        <tr>
+                            <td>40 EUR</td>
+                            <td>50 EUR</td>
+                            <td>60 EUR</td>
+                            <td>70 EUR</td>
+                            <td>80 EUR</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="list-container">
+                    <div class="list-item">
+                        <img src="skiing.svg" class="list-image">
+                        <div class="list-text">
+                            <p><b>Over 2400 hours of skiing with a large number of children and adults.</b></p>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <img src="flag.svg" class="list-image">
+                        <div class="list-text">
+                            <p><b>Over 6 years of experience as a ski instructor.</b></p>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <img src="glasses.svg" class="list-image">
+                        <div class="list-text">
+                            <p><b>Over 600 satisfied participants.</b></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="comments">
-            <h2 id="commentTitle">COMMENTS</h2>
-            <div class="comments-content">
-                <div class="comment-child">
-                    <p>All recommendations for Boško, he has been working with our children for years, he is extremely
-                        dedicated to his work,
-                        and is a true professional. Considering that I have three children, I have had various
-                        experiences with ski instructors
-                        (mostly good ones), but Boško is really special and I highly recommend him to everyone who
-                        starts skiing or wants to
-                        improve their skiing technique.</p>
-                    <p class="sign">Bojan</p>
-                </div>
-                <div class="comment-child">
-                    <p>The best ski instructor to teach your children skiing. Bosko has a great approach to children of
-                        all ages, professional
-                        behavior and love for the sport that is contagious. My sincere reccomandation!</p>
-                    <p class="sign">Jelena</p>
-                </div>
-                <div class="comment-child">
-                    <p>Very pleasant and friendly, and I don't need to comment on professionalism and transfer of
-                        knowledge and skills, he is
-                        No. 1. Very fun for children, our boy skied with him in the third year and this is already the
-                        third year of their
-                        friendship and improvement, they reached the red slopes and we hope to conquer the black ones
-                        soon 🤗. Always in a good
-                        mood and smiling and ready to impart skiing skills to adults as well. If you need a real
-                        professional for all ages, I
-                        sincerely recommend Boško, you will never go wrong with him.</p>
-                    <p class="sign">Sunčica</p>
-                </div>
+        <section id="Comments" class="comment-container">
+            <h1 class="main-title">COMMENTS</h1>
+            <div class="comment-column">
+                <p>All recommendations for Boško, he has been working with our children for years, he is
+                    extremely
+                    dedicated to his work,
+                    and is a true professional. Considering that I have three children, I have had various
+                    experiences with ski instructors
+                    (mostly good ones), but Boško is really special and I highly recommend him to everyone who
+                    starts skiing or wants to
+                    improve their skiing technique.</p>
+                <div class="comment-name">Bojan</div>
+            </div>
+            <div class="comment-column">
+                <p>The best ski instructor to teach your children skiing. Bosko has a great approach to children
+                    of
+                    all ages, professional
+                    behavior and love for the sport that is contagious. My sincere reccomandation!</p>
+                <div class="comment-name">Jelena</div>
+            </div>
+            <div class="comment-column">
+                <p>Very pleasant and friendly, and I don't need to comment on professionalism and transfer of
+                    knowledge and skills, he is
+                    No. 1. Very fun for children, our boy skied with him in the third year and this is already
+                    the
+                    third year of their
+                    friendship and improvement, they reached the red slopes and we hope to conquer the black
+                    ones
+                    soon 🤗. Always in a good
+                    mood and smiling and ready to impart skiing skills to adults as well. If you need a real
+                    professional for all ages, I
+                    sincerely recommend Boško, you will never go wrong with him.</p>
+                <div class="comment-name">Suncica</div>
             </div>
         </section>
     </div>
-    <section>
-        <div class="contact">
-            <div class="contact-data">
-                <!-- <h2>CONTACT US</h2> -->
+    <section class="contact-container" id="Contact">
+        <div class="contact-left">
+            <h1 class="main-title">CONTACT US</h1>
+            <div class="list-item">
+                <img src="map.svg" alt="Mapa">
+                <p>Kopaonik</p>
             </div>
+            <div class="list-item">
+                <img src="number.svg" alt="Broj telefona">
+                <p>+381 63 788 85 84</p>
+            </div>
+            <div class="list-item">
+                <img src="email.svg" alt="email">
+                <p>boskobozovic@skiinstructorkopaonik.com</p>
+            </div>
+            <div class="list-item">
+                <img src="instagram.svg" alt="Instagram">
+                <p>bosko_bozovic</p>
+            </div>
+        </div>
+        <div class="contact-right">
+            <div class="social-icons">
+                <img src="whatsApp.svg" alt="WhatsApp" width="30">
+                <img src="viber.svg" alt="Viber" width="30">
+            </div>
+            <div class="social-icons-name">
+                <span>WhatsApp</span>
+                <span>Viber</span>
+            </div>
+            <div class="languages">
+                <div class="flags">
+                    <img src="serbia.jpg" alt="Serbia">
+                    <img src="english.jpg" alt="English">
+                    <img src="serbia.jpg" alt="Zastava 3">
+                </div>
+                <img src="small-logo.png" alt="Logo" class="contact-logo">
+            </div>
+            <!-- <span>Languages</span> -->
         </div>
     </section>
     <script>

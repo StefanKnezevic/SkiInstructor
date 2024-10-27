@@ -6,6 +6,7 @@
 body {
     margin: 0;
     background-color: #eee;
+    /* font-family: Arial, sans-serif; */
 }
 
 nav {
@@ -54,74 +55,11 @@ article p {
     padding: 10px;
 }
 
-.container {
-    width: 100%;
-    margin: auto;
-    padding: 0;
-    padding-bottom: 1%;
-}
-
-.row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 15px;
-}
-
-.comments {
-    width: 100%;
-    background-image: url(girl.jpg);
-    background-size: cover;
-    background-position: center center;
-    opacity: 1.0;
-    padding: 0 10%;
-    margin: auto;
-}
-
-.comments-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 100%;
-    height: 700px;
-}
-
-.comment-child {
-    /* ne valja ovako, mora lepo visina da se podesi*/
-    width: 300px;
-    height: 460px;
-    text-align: center;
-    color: #e8e4c9;
-    margin: auto;
-    border: 5px white solid;
-}
-
-.sign {
-    text-align: right;
-    color: #e8e4c9;
-    padding: 0 10px 0 0;
-}
-
 .frame {
     width: 100%;
     height: 100%;
     background-color: #e8e4c9;
     background-image: url(backgruond.jpg);
-}
-
-.title {
-    height: 100%;
-    margin: 0 5%;
-    color: black;
-    text-align: left;
-    font-size: 29px;
-}
-
-#commentTitle {
-    color: black;
-    text-align: center;
-    /* font-size: 29px; */
 }
 
 .price {
@@ -221,13 +159,13 @@ div.child-1 p {
     width: 90%;
 }
 
-.line {
+/* .line {
     border-style: dotted none none none;
     border-color: #666;
     width: 100%;
     border-width: thick;
     margin: 10% 0;
-}
+} */
 
 section.baner #myVideo {
     display: block;
@@ -377,7 +315,7 @@ ul.topnav li.dropdownIcon {
 
 /*######### MOBILE #######*/
 
-@media screen and (max-width: 680px) {
+/* @media screen and (max-width: 680px) {
     ul.topnav li:not(:nth-child(1)) {
         display: none;
     }
@@ -451,8 +389,487 @@ ul.topnav li.dropdownIcon {
     section {
         padding: 0px;
     }
+} */
 
-    .row {
-        padding: 10px;
+.class-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-title {
+    text-align: left;
+    width: 100%;
+    font-size: 60px;
+    font-family: Arial, sans-serif;
+    margin: 2% 0 5% 10%;
+}
+
+.about-title {
+    text-align: left;
+    font-size: 3em;
+    font-family: Arial, sans-serif;
+}
+
+.class-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    /* Razmak između celine */
+    margin: 0 15%;
+}
+
+.class-section {
+    border: 1px solid #e8d1ae;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #e8d1ae;
+    flex: 1;
+    /* Da svaka celina zauzima jednaku širinu */
+    display: flex;
+    flex-direction: column;
+    /* Postavi raspored u kolonu */
+    height: auto;
+}
+
+.class-header {
+    display: flex;
+    /* Logo i naslov u istom redu */
+    align-items: center;
+    /* Poravnaj elemente vertikalno */
+    margin-bottom: 10px;
+    /* Razmak između zaglavlja i teksta */
+}
+
+.logo {
+    width: 80px;
+    /* ili prema tvojoj slici */
+    height: auto;
+    margin-right: 10px;
+    /* Razmak između logoa i naslova */
+}
+
+.section-title {
+    margin: 0;
+    /* Ukloni margin gornjem i donjem delu */
+    font-size: 1.5em;
+}
+
+.section-text {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Media Query za responsive */
+@media (max-width: 600px) {
+    .class-sections {
+        flex-direction: column;
+        /* Celine jedna ispod druge */
+        gap: 20px;
+    }
+
+    .class-section {
+        margin-right: 0;
+        /* Ukloni margin između celine */
+        margin-bottom: 20px;
+        /* Razmak između celine u vertikalnom rasporedu */
+        flex-direction: column;
+    }
+
+    .class-section:last-child {
+        margin-bottom: 0;
+        /* Ukloni margin poslednjoj celini */
+    }
+
+    .class-header {
+        flex-direction: row;
+        /* Održavaj logo i naslov u istom redu */
+    }
+}
+
+.about-container {
+    max-width: 100%;
+    margin: 0 5% 0 2%;
+}
+
+.about-sections {
+    display: flex;
+    gap: 100px;
+    width: 100%;
+}
+
+.left-column {
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    max-width: 630px;
+    height: auto;
+}
+
+.about-section-text {
+    font-size: 1em;
+    color: #333;
+}
+
+.section-list {
+    list-style-type: disc;
+    /* Stil liste */
+    padding-left: 10px;
+    /* Razmak između liste i ivice */
+}
+
+.right-column {
+    /* max-width: 500px; */
+    height: auto;
+    /* Obezbedi da desna kolona zauzima istu visinu */
+}
+
+.line {
+    /* width: 100%; */
+    /* Širina linije */
+    /* max-width: 500px; */
+    margin: 50px 0;
+    /* Razmak iznad i ispod linije */
+    border-style: dotted none none none;
+    border-color: #666;
+    /* Boja linije */
+    border-width: thick;
+    /* margin: 10% 0; */
+}
+
+.image {
+    width: 100%;
+    /* max-width: 500px; */
+    /* Prilagodljiva širina slike */
+    height: auto;
+    /* Održava proporcije slike */
+    /* flex-grow: 1; */
+    /* Slika raste da popuni preostalu visinu */
+    /* object-fit: cover; */
+    /* Prilagodi sliku da popuni prostor */
+    min-height: 400px;
+    /* Minimalna visina slike */
+    border: 1px #030303 solid;
+    border-radius: 10px;
+}
+
+.contact-button {
+    background-color: #cdad7d;
+    /* Boja pozadine dugmeta */
+    color: #222344;
+    /* Boja teksta */
+    padding: 10px 15px;
+    /* Unutrašnji razmak */
+    border-radius: 5px;
+    /* Zaobljeni uglovi */
+    text-align: center;
+    /* Centriranje teksta */
+    margin-top: 100px;
+    /* Razmak iznad dugmeta */
+    width: 300px;
+}
+
+.contact-button a {
+    color: #222344;
+    /* Boja linka */
+    text-decoration: none;
+    /* Ukloni podvlačenje */
+    font-weight: bold;
+    /* Podebljani tekst */
+}
+
+.contact-button a:hover {
+    text-decoration: underline;
+    /* Podvlačenje na hover */
+    opacity: 0.9;
+    /* Lagano smanjenje neprozirnosti */
+}
+
+/* Media Query za responsive */
+@media (max-width: 600px) {
+    .about-sections {
+        flex-direction: column;
+        /* Celine jedna ispod druge */
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        /* Obje kolone zauzimaju punu širinu */
+        height: auto;
+        /* Visina automatski */
+        margin-bottom: 20px;
+        /* Razmak između kolona */
+    }
+
+    .right-column {
+        height: auto;
+        /* Osiguraj da desna kolona nije fiksne visine */
+    }
+}
+
+.services-container {
+    width: 100%;
+}
+
+.services-title {
+    text-align: left;
+    /* font-size: 60px; */
+    font-family: Arial, sans-serif;
+    margin: 2% 0 0 10%;
+}
+
+.services-list {
+    text-align: left;
+    /* font-size: 60px; */
+    font-family: Arial, sans-serif;
+    margin: 2% 0 0 9%;
+}
+
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    /* Postavlja listu u kolonu */
+    gap: 30px;
+    /* Razmak između stavki */
+    margin: 0 10% 5% 20%;
+}
+
+.list-item {
+    display: flex;
+    /* Flex za svaki element liste */
+    align-items: center;
+    /* Vertikalno centriranje */
+    width: 100%;
+    /* Podesi širinu na 100% */
+}
+
+.list-image {
+    width: 100px;
+    /* Fiksna širina slike */
+    height: auto;
+    /* Održava proporcije slike */
+    margin-right: 15px;
+    /* Razmak između slike i teksta */
+}
+
+.list-text {
+    flex: 1;
+    /* Tekst zauzima preostalu širinu */
+}
+
+p {
+    font-size: 1.5em;
+    /* Podesi veličinu opisa */
+}
+
+/* Responsive prilagođavanje */
+@media (max-width: 600px) {
+    .list-image {
+        width: 80px;
+        /* Manja širina slike na manjim ekranima */
+    }
+
+    p {
+        font-size: 0.9em;
+        /* Manja veličina opisa */
+    }
+}
+
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    /* Centriranje kolona */
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.price-container .left-column {
+    max-width: 500px;
+    /* Ograničava maksimalnu širinu tabele */
+    margin: 0 50px 20px 0;
+    /* Razmak između kolona smanjen na 50px */
+    overflow-x: auto;
+    /* Omogućava horizontalno skrolovanje ako je potrebno */
+
+}
+
+.price-container .list-container {
+    width: 100%;
+    max-width: 600px;
+    /* Ograničava širinu liste */
+    display: flex;
+    flex-direction: column;
+    /* Postavlja listu u kolonu */
+    margin: 0;
+}
+
+.price-container table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Kombinovanje ivica ćelija */
+}
+
+td {
+    border: 3px solid #030303;
+    /* Bordura za ćelije */
+    padding: 8px;
+    text-align: center;
+    /* Centriranje sadržaja u tabeli */
+    font-weight: bold;
+}
+
+
+.comment-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    background-image: url(girl.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.comment-container .main-title {
+    color: #e8e4c9;
+    text-align: center;
+}
+
+.comment-column {
+    border: 3px solid #e8e4c9;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    /* position: relative; */
+    flex: 1 1 200px;
+    /* Flexible size */
+    max-width: 300px;
+    /* Maximum width */
+    color: #e8e4c9;
+}
+
+.comment-name {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.contact-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Poravnanje u visini */
+    flex-wrap: wrap;
+    /* Omogućava prelamanje elemenata */
+    background-image: url(footer.jpg);
+    background-size: cover;
+    background-position: center center;
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-left {
+    flex: 1;
+    min-width: 300px;
+    /* Minimalna širina za bolje prilagođavanje */
+    padding-right: 20px;
+}
+
+.contact-right {
+    flex: 1;
+    min-width: 300px;
+    /* Minimalna širina za bolje prilagođavanje */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: flex-end;
+    /* Poravnanje sadržaja desno */
+    margin-left: 20px;
+    /* Razmak sa leve strane */
+}
+
+.contact-container .list-item {
+    display: flex;
+    align-items: center;
+    color: #eee;
+    font-size: 10px;
+    /* margin-left: 20px; */
+    margin: 0 0 0 10%;
+}
+
+.contact-container .list-item img {
+    width: 100px;
+    /* Širina slike */
+    max-width: 40px;
+    max-height: 40px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 55px;
+    /* Razmak između ikonica */
+}
+
+.social-icons-name {
+    display: flex;
+    gap: 30px;
+    color: #eee;
+}
+
+.flags {
+    display: flex;
+    gap: 5px;
+}
+
+.flags img {
+    width: 30px;
+    /* Širina zastava */
+    height: auto;
+    margin-right: 5px;
+}
+
+.contact-logo {
+    max-width: 100%;
+    /* Osigurava da slike budu responsive */
+    height: auto;
+    /* Održava proporcije */
+}
+
+.languages {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .contact-logo {
+        height: 160px;
+    }
+
+    .contact-right {
+        align-items: flex-start;
+        align-content: flex-start;
+        margin: 0 0 0 10%;
+    }
+
+    .contact-container .list-item img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .social-icons {
+        gap: 75px;
+        /* Razmak između ikonica */
     }
 }
