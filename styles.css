@@ -124,6 +124,12 @@ footer {
   /* Razmak između logoa i naslova */
 }
 
+.sign a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
 /* Responsive Styles */
 @media (max-width: 600px) {
   header {
