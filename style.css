@@ -30,6 +30,7 @@ section.baner #myVideo {
     display: block;
     /* padding-top: 44px; */
     width: 100%;
+    max-width: 100%;
     margin-top: 24px;
 }
 
@@ -255,16 +256,14 @@ ul.topnav li.dropdownIcon {
 }
 
 .main-title {
-    text-align: left;
-    width: 100%;
+    text-align: center;
     font-size: 60px;
     font-family: Arial, sans-serif;
-    margin: 2% 0 5% 10%;
 }
 
 .about-title {
     text-align: left;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: Arial, sans-serif;
 }
 
@@ -342,11 +341,11 @@ ul.topnav li.dropdownIcon {
     }
 
     .main-title {
-        text-align: left;
+        text-align: center;
         width: 100%;
         font-size: 30px;
         font-family: Arial, sans-serif;
-        margin: 10% 0 5% 5%;
+        /* margin: 10% 0 5% 5%; */
     }
 
     .about-title {
@@ -473,24 +472,30 @@ ul.topnav li.dropdownIcon {
         height: auto;
         /* Osiguraj da desna kolona nije fiksne visine */
     }
+
+    .contact-button {
+        width: 100%;
+    }
 }
 
 .services-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 
 .services-title {
-    text-align: left;
+    text-align: center;
     /* font-size: 60px; */
     font-family: Arial, sans-serif;
-    margin: 2% 0 0 10%;
 }
 
 .services-list {
     text-align: left;
     /* font-size: 60px; */
     font-family: Arial, sans-serif;
-    margin: 2% 0 0 9%;
 }
 
 
@@ -500,7 +505,7 @@ ul.topnav li.dropdownIcon {
     /* Postavlja listu u kolonu */
     gap: 30px;
     /* Razmak između stavki */
-    margin: 0 10% 5% 20%;
+    align-items: center;
 }
 
 .list-item {
@@ -508,8 +513,8 @@ ul.topnav li.dropdownIcon {
     /* Flex za svaki element liste */
     align-items: center;
     /* Vertikalno centriranje */
-    width: 100%;
-    /* Podesi širinu na 100% */
+    width: 70%;
+    /* Podesi širinu na 70% */
 }
 
 .list-image {
@@ -542,6 +547,18 @@ p {
         font-size: 0.9em;
         /* Manja veličina opisa */
     }
+
+    .list-item {
+        width: 80%;
+    }
+
+    .price-container .left-column {
+        width: 80%;
+    }
+
+    .services-list {
+        padding: 10%;
+    }
 }
 
 
@@ -560,7 +577,7 @@ p {
     /* Ograničava maksimalnu širinu tabele */
     margin: 0 50px 20px 0;
     /* Razmak između kolona smanjen na 50px */
-    overflow-x: auto;
+    /* overflow-x: auto; */
     /* Omogućava horizontalno skrolovanje ako je potrebno */
 
 }
@@ -591,14 +608,18 @@ td {
 }
 
 
+.comments {
+    margin: 0 auto;
+    background-image: url(girl.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
 .comment-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    background-image: url(girl.jpg);
-    background-size: cover;
-    background-position: center center;
 }
 
 .comment-container .main-title {
@@ -759,11 +780,6 @@ td {
         font-size: 10px;
     }
 
-    .price-container .left-column {
-        width: 100%;
-        margin: 0 25px 40px 0;
-    }
-
     td {
         border: 2px solid #030303;
         /* Bordura za ćelije */
@@ -793,3 +809,62 @@ td {
     }
 
 }
+
+
+
+/* .video-background {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* Boja teksta */
+text-align: center;
+z-index: 2;
+/* Pomeranje preko videa */
+}
+
+.content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.content p {
+    font-size: 24px;
+}
+
+.content img {
+    max-width: 100%;
+    /* Slika će biti responzivna */
+    height: auto;
+    /* Održava proporciju */
+    margin-top: 20px;
+}
+
+*/
