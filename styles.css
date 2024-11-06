@@ -71,6 +71,20 @@ article {
   /* Senka oko članaka */
 }
 
+.image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  /* Maksimalna visina slike */
+  object-fit: cover;
+  /* Omogućava da slika ostane proporcionalna, isečena ako je potrebno*/
+  display: block;
+  /* Uklanja prazni prostor ispod slike */
+  margin: 20px 0;
+  /* Razmak između slika i članaka */
+  background-color: #fff;
+}
+
 .date {
   font-size: 14px;
   color: #666;
@@ -154,13 +168,6 @@ footer {
   .toggle-btn {
     width: 100%;
   }
-}
-
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 20px;
 }
 
 h1 {
