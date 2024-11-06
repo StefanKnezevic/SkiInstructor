@@ -16,6 +16,7 @@ nav {
     top: 0;
     /* Position the navbar at the top of the page */
     width: 100%;
+    z-index: 10;
 }
 
 .frame {
@@ -31,6 +32,88 @@ section.baner #myVideo {
     width: 100%;
     max-width: 100%;
     margin-top: 24px;
+    /* position: relative; */
+    /* height: 100%; */
+    /* overflow: hidden; */
+}
+
+.video-content {
+    width: 90%;
+    /* Dodajte širinu da se sadržaj prilagođava širini ekrana */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* Boja teksta */
+    text-align: center;
+    margin-top: 80px;
+    z-index: 2;
+    /* Pomeranje preko videa */
+}
+
+.video-content h2 {
+    margin: 0;
+    color: black;
+    font-size: 3vw;
+    /* Font veličina zavisi od širine ekrana */
+}
+
+.video-content p {
+    font-size: 2vw;
+    /* Smanjuje veličinu fonta u zavisnosti od ekrana */
+    color: black;
+}
+
+.video-content img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+    margin-top: 50px;
+}
+
+/* Manji ekrani, kao mobilni uređaji */
+@media (max-width: 768px) {
+    .video-content {
+        width: 50%;
+        top: 25%;
+    }
+
+    .video-content h2 {
+        font-size: 2vw;
+    }
+
+    .video-content p {
+        font-size: 2vw;
+    }
+
+    .video-content img {
+        max-height: 20vh;
+        /* Manja visina slika na manjim ekranima */
+    }
+}
+
+/* Mobilni uređaji sa veoma malim ekranima */
+@media (max-width: 480px) {
+    .video-content {
+        width: 75%;
+        top: 5%;
+    }
+
+    .video-content h2 {
+        font-size: 2vw;
+        /* Dalje smanjuje font na malim ekranima */
+    }
+
+    .video-content p {
+        font-size: 2vw;
+    }
+
+    .video-content img {
+        max-height: 20vh;
+        /* Manja visina slika */
+    }
 }
 
 .titleBlog h1 {
@@ -798,60 +881,3 @@ td {
         margin-right: 3px;
     }
 }
-
-
-
-/* .video-background {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-    width: 100%;
-}
-
-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 1;
-    transform: translate(-50%, -50%);
-}
-
-body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    /* Boja teksta */
-/* text-align: center;
-z-index: 2; */
-/* Pomeranje preko videa */
-/* } */
-
-/* .content h1 {
-    font-size: 48px;
-    margin: 0;
-}
-
-.content p {
-    font-size: 24px;
-}
-
-.content img {
-    max-width: 100%;
-height: auto;
-margin-top: 20px;
-}
-
-*/
