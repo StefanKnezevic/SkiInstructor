@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Glavna stranica sajta -->
+    <sitemap>
+        <loc>https://www.tvoj-sajt.com/</loc>
+        <lastmod>2024-11-09</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </sitemap>
+
+    <!-- About stranica -->
+    <sitemap>
+        <loc>https://www.tvoj-sajt.com/#About</loc>
+        <lastmod>2024-11-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </sitemap>
+
+    <!-- Ski Lessons stranica -->
+    <sitemap>
+        <loc>https://www.tvoj-sajt.com/#Classes</loc>
+        <lastmod>2024-11-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </sitemap>
+
+    <!-- Services stranica -->
+    <sitemap>
+        <loc>https://www.tvoj-sajt.com/#Services</loc>
+        <lastmod>2024-11-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </sitemap>
+
+    <!-- Price list stranica -->
+    <sitemap>
+        <loc>https://www.tvoj-sajt.com/#Price</loc>
+        <lastmod>2024-11-09</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </sitemap>
+
+    <!-- Comments stranica -->
+    <sitemap>
+        <loc>https://www.tvoj-sajt.com/#Comments</loc>
+        <lastmod>2024-11-09</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </sitemap>
+
+    <!-- Blog stranica -->
+    <sitemap>
+        <loc>https://www.tvoj-sajt.com/Blog.html</loc>
+        <lastmod>2024-10-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </sitemap>
+
+    <!-- Contact stranica -->
+    <sitemap>
+        <loc>https://www.tvoj-sajt.com/#Contact</loc>
+        <lastmod>2024-11-09</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </sitemap>
+</sitemapindex>
+<!-- Objašnjenje elemenata u ovom sitemap.xml fajlu:
+<loc> (Location) – Ovaj element sadrži URL stranice. Možeš da koristiš relativne URL-ove, kao što su #About, ali je bolje koristiti pune URL-ove, na primer https://www.tvoj-sajt.com/#About, kako bi pretraživači mogli da pristupe tačnim lokacijama na sajtu.
+
+<lastmod> (Last Modification Date) – Ovaj element označava datum kada je stranica poslednji put ažurirana. Možeš da koristiš datum kada je stranica poslednji put izmenjena. Ako stranica nije promenjena, možeš da koristiš datum kada je prvi put postavljena.
+
+<changefreq> (Change Frequency) – Ovaj element pokazuje kako često se stranica menja. Na primer, za glavnu stranicu možeš staviti daily (ako se često menja), a za cenu ili komentare yearly (ako se menja ređe).
+
+<priority> (Priority) – Ovaj element označava važnost stranice u odnosu na druge stranice na sajtu. Glavna stranica bi obično imala najviši prioritet (npr. 1.0), dok druge stranice mogu imati manji prioritet, kao što su 0.6 za stranice kao što su Cena ili Kontakt.
+
+
+dodavanje u Google Search Console
+
+Prijavi se u Google Search Console.
+Izaberi svoj sajt.
+U levom meniju, klikni na "Sitemaps".
+U polje "Add a new sitemap" unesi putanju do svog sitemap.xml fajla (npr. sitemap.xml ili https://www.example.com/sitemap.xml).
+Klikni na "Submit".
+
+-->

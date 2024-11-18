@@ -73,6 +73,22 @@ section.baner #myVideo {
     margin-top: 50px;
 }
 
+.video-flags {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.video-flags img {
+    width: 30px;
+    /* Širina zastava */
+    height: auto;
+    margin-right: 5px;
+    align-content: center;
+    align-items: center;
+}
+
 /* Manji ekrani, kao mobilni uređaji */
 @media (max-width: 768px) {
     .video-content {
