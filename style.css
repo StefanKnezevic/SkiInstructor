@@ -65,7 +65,7 @@ section.baner #myVideo {
     color: black;
 }
 
-.video-content img {
+.video-logo {
     max-width: 600px;
     width: 100%;
     height: auto;
@@ -73,21 +73,10 @@ section.baner #myVideo {
     margin-top: 50px;
 }
 
-.video-flags {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    gap: 5px;
+.video-flags img {
+    width: 50px;
 }
 
-.video-flags img {
-    width: 30px;
-    /* Širina zastava */
-    height: auto;
-    margin-right: 5px;
-    align-content: center;
-    align-items: center;
-}
 
 /* Manji ekrani, kao mobilni uređaji */
 @media (max-width: 768px) {
@@ -421,6 +410,10 @@ ul.topnav li.dropdownIcon {
         flex-direction: column;
         /* Celine jedna ispod druge */
         gap: 20px;
+    }
+
+    .video-flags img {
+        width: 25px;
     }
 
     .class-section {
